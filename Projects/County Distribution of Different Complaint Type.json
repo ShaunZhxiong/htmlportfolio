@@ -1,0 +1,53 @@
+{
+  "config": {
+    "view": {"continuousWidth": 400, "continuousHeight": 300},
+    "axis": {"labelFontSize": 8, "titleFontSize": 10}
+  },
+  "data": {
+    "url": "DATACounty Distribution of Different Complaint Type.json",
+    "format": {"type": "json"}
+  },
+  "mark": "rect",
+  "encoding": {
+    "color": {
+      "type": "quantitative",
+      "field": "counter",
+      "scale": {
+        "domain": [0, 100, 200, 300, 1000, 5000],
+        "range": [
+          "#F0F8FF",
+          "cornflowerblue",
+          "mediumseagreen",
+          "#FFEE00",
+          "darkorange",
+          "firebrick"
+        ],
+        "type": "sqrt"
+      },
+      "sort": "ascending"
+    },
+    "tooltip": [
+      {"type": "nominal", "field": "borough"},
+      {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"},
+      {"type": "quantitative", "field": "counter"}
+    ],
+    "x": {
+      "type": "nominal",
+      "axis": {"labelAngle": 0, "ticks": false, "title": null},
+      "field": "Complaint Category",
+      "scale": {"zero": false},
+      "title": "Date Entered"
+    },
+    "y": {
+      "type": "ordinal",
+      "axis": {"ticks": false, "title": null},
+      "field": "borough",
+      "scale": {"zero": false},
+      "title": "Complaint Category"
+    }
+  },
+  "height": 100,
+  "title": "County Distribution of Different Complaint Type in NYC since 2020",
+  "width": 1800,
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"
+}

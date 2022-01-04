@@ -13048,6 +13048,42 @@ div#notebook {
     page-break-inside: avoid; 
   }
 }
+.collapsible {
+      background-color: #E7E9EB;
+      color: black;
+      cursor: pointer;
+      margin:0 0 1em 6.8em;
+      padding: 18;
+      width: 8%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #777777;
+    }
+    
+    .collapsible:after {
+      content: '\002B';
+      color: black;
+      font-weight: bold;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2212";
+    }
+    
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #ffffff;
+    }
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
@@ -13100,6 +13136,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
@@ -13155,6 +13193,7 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+  </div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -13179,6 +13218,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
@@ -13280,6 +13321,7 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+  </div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -13313,6 +13355,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
@@ -13374,8 +13418,9 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+  </div>
 
-<div class="output_wrapper">
+<center><div class="output_wrapper">
 <div class="output">
 
 
@@ -13395,7 +13440,7 @@ Allocate borough</br></p>
 </div>
 
 </div>
-</div>
+</div></center>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
@@ -13407,6 +13452,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
@@ -13467,8 +13514,9 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+</div>
 
-<div class="output_wrapper">
+<center><div class="output_wrapper">
 <div class="output">
 
 
@@ -13488,7 +13536,7 @@ Allocate borough</br></p>
 </div>
 
 </div>
-</div>
+</div></center>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
@@ -13500,6 +13548,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
@@ -13541,8 +13591,9 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+  </div>
 
-<div class="output_wrapper">
+<center><div class="output_wrapper">
 <div class="output">
 
 
@@ -13568,7 +13619,7 @@ Allocate borough</br></p>
 </div>
 
 </div>
-</div>
+</div></center>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
@@ -13580,6 +13631,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[92]:</div>
 <div class="inner_cell">
@@ -13614,25 +13667,26 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+</div>
 
-<div class="output_wrapper">
+<center><div class="output_wrapper">
 <div class="output">
 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[92]:</div>
+    <div class="prompt output_prompt">  </div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-f929e46c016d403e91ab0844967c2da0"></div>
+<div id="MonthlyDistributionofReactionTime"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f929e46c016d403e91ab0844967c2da0") {
-      outputDiv = document.getElementById("altair-viz-f929e46c016d403e91ab0844967c2da0");
+    if (outputDiv.id !== "MonthlyDistributionofReactionTime") {
+      outputDiv = document.getElementById("MonthlyDistributionofReactionTime");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13674,25 +13728,27 @@ Allocate borough</br></p>
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "altair-data-b5ad007c7601e7d71076ee00a3d752ce.json", "format": {"type": "json"}}, "mark": {"type": "circle", "opacity": 0.6, "stroke": "black", "strokeWidth": 1}, "encoding": {"color": {"value": "#FF8542"}, "size": {"type": "quantitative", "field": "counter", "legend": {"title": "Total Occurrence"}, "scale": {"range": [0, 500]}}, "tooltip": [{"type": "nominal", "field": "Month_DEntered"}, {"type": "quantitative", "field": "ReactionTime"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "ordinal", "axis": {"labelAngle": 0}, "field": "Month_DEntered", "title": "Month"}, "y": {"type": "nominal", "axis": {"values": [1, 11, 21, 31, 41, 51, 61]}, "field": "ReactionTime", "title": "Reaction Time / day"}}, "height": 400, "title": "Monthly Distribution of Reaction Time", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "DATAMonthlyDistributionofReactionTime.json", "format": {"type": "json"}}, "mark": {"type": "circle", "opacity": 0.6, "stroke": "black", "strokeWidth": 1}, "encoding": {"color": {"value": "#FF8542"}, "size": {"type": "quantitative", "field": "counter", "legend": {"title": "Total Occurrence"}, "scale": {"range": [0, 500]}}, "tooltip": [{"type": "nominal", "field": "Month_DEntered"}, {"type": "quantitative", "field": "ReactionTime"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "ordinal", "axis": {"labelAngle": 0}, "field": "Month_DEntered", "title": "Month"}, "y": {"type": "nominal", "axis": {"values": [1, 11, 21, 31, 41, 51, 61]}, "field": "ReactionTime", "title": "Reaction Time / day"}}, "height": 400, "title": "Monthly Distribution of Reaction Time", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
 </div>
 
 </div>
-</div>
+</div></center>
 
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="7-Time-Distribution-of-Different-Complaint-Type">7 Time Distribution of Different Complaint Type<a class="anchor-link" href="#7-Time-Distribution-of-Different-Complaint-Type">&#182;</a></h2><p>From the graph, we can see that. This huge plot was made to take a detailed look at the time distribution of different complaint type since 2020. Though the information may not be so abundat as it looks, but it still provides some information. Most of the complaints don't have a specific burst period but are evenly distributed during the year. However, '7G' complaint has a surge from 06/2020 - 07/2020. '2N' had a realtively densed distribution from 04/2020 - 06/2020. Also the complaints decreased between 04/2020 - 07/2020, which might be the cause of COVID-19.¶</p>
+<h2 id="7-Time-Distribution-of-Different-Complaint-Type">7 Time Distribution of Different Complaint Type<a class="anchor-link" href="#7-Time-Distribution-of-Different-Complaint-Type">&#182;</a></h2><p>From the graph, we can see that. This huge plot was made to take a detailed look at the time distribution of different complaint type since 2020. Though the information may not be so abundat as it looks, but it still provides some information. Most of the complaints don't have a specific burst period but are evenly distributed during the year. However, '7G' complaint has a surge from 06/2020 - 07/2020. '2N' had a realtively densed distribution from 04/2020 - 06/2020. Also the complaints decreased between 04/2020 - 07/2020, which might be the cause of COVID-19.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
@@ -13735,6 +13791,7 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -13742,18 +13799,18 @@ Allocate borough</br></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[93]:</div>
+    <div class="prompt output_prompt">  </div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-b798823d8f0446d08f6f11c7d26f83ad"></div>
+<div id="TimeDistributionofDifferentComplaintTypeinNYCsince2020"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b798823d8f0446d08f6f11c7d26f83ad") {
-      outputDiv = document.getElementById("altair-viz-b798823d8f0446d08f6f11c7d26f83ad");
+    if (outputDiv.id !== "TimeDistributionofDifferentComplaintTypeinNYCsince2020") {
+      outputDiv = document.getElementById("TimeDistributionofDifferentComplaintTypeinNYCsince2020");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13795,7 +13852,7 @@ Allocate borough</br></p>
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 8, "titleFontSize": 10}}, "data": {"url": "altair-data-04ee6639a6655616515c5000ed7068e3.json", "format": {"type": "json"}}, "mark": {"type": "circle", "opacity": 0.4, "stroke": "darkorange", "strokeWidth": 1}, "encoding": {"color": {"value": "#F79D46"}, "size": {"type": "quantitative", "field": "counter", "legend": {"title": "Total Occurrence"}, "scale": {"range": [0, 1000]}}, "tooltip": [{"type": "temporal", "field": "Date Entered"}, {"type": "nominal", "field": "Complaint Category"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "temporal", "axis": {"labelAngle": 0}, "field": "Date Entered", "title": "Date Entered"}, "y": {"type": "ordinal", "field": "Complaint Category", "title": "Complaint Category"}}, "height": 1200, "selection": {"selector013": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "title": "Time Distribution of Different Complaint Type in NYC since 2020", "width": 1500, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 8, "titleFontSize": 10}}, "data": {"url": "DATATimeDistributionofDifferentComplaintTypeinNYCsince2020.json", "format": {"type": "json"}}, "mark": {"type": "circle", "opacity": 0.4, "stroke": "darkorange", "strokeWidth": 1}, "encoding": {"color": {"value": "#F79D46"}, "size": {"type": "quantitative", "field": "counter", "legend": {"title": "Total Occurrence"}, "scale": {"range": [0, 1000]}}, "tooltip": [{"type": "temporal", "field": "Date Entered"}, {"type": "nominal", "field": "Complaint Category"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "temporal", "axis": {"labelAngle": 0}, "field": "Date Entered", "title": "Date Entered"}, "y": {"type": "ordinal", "field": "Complaint Category", "title": "Complaint Category"}}, "height": 1000, "selection": {"selector013": {"type": "interval", "bind": "scales", "encodings": ["x", "y"]}}, "title": "Time Distribution of Different Complaint Type in NYC since 2020", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -13807,10 +13864,7 @@ Allocate borough</br></p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>chart2.to_dict()</p>
 
-</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
@@ -13822,6 +13876,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[94]:</div>
 <div class="inner_cell">
@@ -13865,6 +13921,7 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -13872,18 +13929,18 @@ Allocate borough</br></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[94]:</div>
+    <div class="prompt output_prompt">  </div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-ef2dc2cfcca0490fb972d678b1a3f1b9"></div>
+<div id="County Distribution of Different Complaint Type"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ef2dc2cfcca0490fb972d678b1a3f1b9") {
-      outputDiv = document.getElementById("altair-viz-ef2dc2cfcca0490fb972d678b1a3f1b9");
+    if (outputDiv.id !== "County Distribution of Different Complaint Type") {
+      outputDiv = document.getElementById("County Distribution of Different Complaint Type");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -13925,7 +13982,7 @@ Allocate borough</br></p>
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 8, "titleFontSize": 10}}, "data": {"url": "altair-data-212a5ac2e8f38fbb5a5a9c8a3acab8da.json", "format": {"type": "json"}}, "mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "counter", "scale": {"domain": [0, 100, 200, 300, 1000, 5000], "range": ["#F0F8FF", "cornflowerblue", "mediumseagreen", "#FFEE00", "darkorange", "firebrick"], "type": "sqrt"}, "sort": "ascending"}, "tooltip": [{"type": "nominal", "field": "borough"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "nominal", "axis": {"labelAngle": 0, "ticks": false, "title": null}, "field": "Complaint Category", "scale": {"zero": false}, "title": "Date Entered"}, "y": {"type": "ordinal", "axis": {"ticks": false, "title": null}, "field": "borough", "scale": {"zero": false}, "title": "Complaint Category"}}, "height": 100, "title": "County Distribution of Different Complaint Type in NYC since 2020", "width": 1800, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 8, "titleFontSize": 10}}, "data": {"url": "DATACounty Distribution of Different Complaint Type.json", "format": {"type": "json"}}, "mark": "rect", "encoding": {"color": {"type": "quantitative", "field": "counter", "scale": {"domain": [0, 100, 200, 300, 1000, 5000], "range": ["#F0F8FF", "cornflowerblue", "mediumseagreen", "#FFEE00", "darkorange", "firebrick"], "type": "sqrt"}, "sort": "ascending"}, "tooltip": [{"type": "nominal", "field": "borough"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "nominal", "axis": {"labelAngle": 0, "ticks": false, "title": null}, "field": "Complaint Category", "scale": {"zero": false}, "title": "Date Entered"}, "y": {"type": "ordinal", "axis": {"ticks": false, "title": null}, "field": "borough", "scale": {"zero": false}, "title": "Complaint Category"}}, "height": 100, "title": "County Distribution of Different Complaint Type in NYC since 2020", "width": 1200, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -13944,6 +14001,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
@@ -14004,6 +14063,7 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -14011,7 +14071,7 @@ Allocate borough</br></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[95]:</div>
+    <div class="prompt output_prompt">  </div>
 
 
 
@@ -14064,7 +14124,7 @@ Allocate borough</br></p>
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 10, "titleFontSize": 10}}, "vconcat": [{"mark": {"type": "point", "size": 80}, "encoding": {"color": {"condition": {"type": "nominal", "field": "borough", "selection": "selector014"}, "value": "lightgray"}, "tooltip": [{"type": "quantitative", "field": "ReactionTime"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "ordinal", "field": "Complaint Category"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "ordinal", "axis": {"labels": false, "ticks": false}, "field": "Complaint Category"}, "y": {"type": "ordinal", "axis": {}, "field": "counter", "sort": "descending", "title": "Total Occurrence"}}, "height": 300, "selection": {"selector014": {"type": "interval"}}, "width": 1800}, {"mark": "text", "encoding": {"color": {"condition": {"type": "ordinal", "field": "", "selection": "selector014"}, "value": "lightgray"}, "text": {"type": "ordinal", "field": "Complaint Category"}, "x": {"type": "ordinal", "axis": null, "field": "Complaint Category"}}, "height": 0, "width": 1800}, {"mark": {"type": "point", "size": 80}, "encoding": {"color": {"condition": {"type": "nominal", "field": "borough", "selection": "selector014"}, "value": "lightgray"}, "tooltip": [{"type": "quantitative", "field": "ReactionTime"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "ordinal", "axis": {"labels": false, "ticks": false}, "field": "Complaint Category"}, "y": {"type": "ordinal", "axis": {}, "field": "ReactionTime", "sort": "ascending", "title": "Average Reaction Time"}}, "height": 300, "selection": {"selector014": {"type": "interval"}}, "width": 1800}], "data": {"url": "altair-data-ba6c09e5c403aeed0087e1f0895b3691.json", "format": {"type": "json"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 10, "titleFontSize": 10}}, "vconcat": [{"mark": {"type": "point", "size": 80}, "encoding": {"color": {"condition": {"type": "nominal", "field": "borough", "selection": "selector014"}, "value": "lightgray"}, "tooltip": [{"type": "quantitative", "field": "ReactionTime"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "ordinal", "field": "Complaint Category"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "ordinal", "axis": {"labels": false, "ticks": false}, "field": "Complaint Category"}, "y": {"type": "ordinal", "axis": {}, "field": "counter", "sort": "descending", "title": "Total Occurrence"}}, "height": 200, "selection": {"selector014": {"type": "interval"}}, "width": 1800}, {"mark": "text", "encoding": {"color": {"condition": {"type": "ordinal", "field": "", "selection": "selector014"}, "value": "lightgray"}, "text": {"type": "ordinal", "field": "Complaint Category"}, "x": {"type": "ordinal", "axis": null, "field": "Complaint Category"}}, "height": 0, "width": 1800}, {"mark": {"type": "point", "size": 80}, "encoding": {"color": {"condition": {"type": "nominal", "field": "borough", "selection": "selector014"}, "value": "lightgray"}, "tooltip": [{"type": "quantitative", "field": "ReactionTime"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "ordinal", "axis": {"labels": false, "ticks": false}, "field": "Complaint Category"}, "y": {"type": "ordinal", "axis": {}, "field": "ReactionTime", "sort": "ascending", "title": "Average Reaction Time"}}, "height": 200, "selection": {"selector014": {"type": "interval"}}, "width": 1800}], "data": {"url": "DATAReaction Time and Occurrence Frequency.json", "format": {"type": "json"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -14083,6 +14143,8 @@ Allocate borough</br></p>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
+  <button class="collapsible">Code</button>
+  <div class="content">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[97]:</div>
 <div class="inner_cell">
@@ -14120,6 +14182,7 @@ Allocate borough</br></p>
     </div>
 </div>
 </div>
+</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -14127,7 +14190,7 @@ Allocate borough</br></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[97]:</div>
+    <div class="prompt output_prompt">  </div>
 
 
 
@@ -14180,7 +14243,7 @@ Allocate borough</br></p>
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "vconcat": [{"mark": {"type": "point", "size": 40}, "encoding": {"color": {"condition": {"type": "nominal", "field": "borough", "selection": "selector016"}, "value": "lightgray"}, "tooltip": [{"type": "quantitative", "field": "ReactionTime"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "ordinal", "axis": {"labelAngle": 0}, "field": "Complaint Category", "scale": {"zero": false}}, "y": {"type": "ordinal", "field": "ReactionTime", "scale": {"zero": false}, "sort": "descending"}}, "height": 300, "selection": {"selector016": {"type": "interval"}}, "width": 700}, {"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "borough"}, "x": {"type": "ordinal", "aggregate": "count", "field": "counter"}, "y": {"type": "nominal", "field": "borough"}}, "transform": [{"filter": {"selection": "selector016"}}], "width": 700}], "data": {"url": "altair-data-ba6c09e5c403aeed0087e1f0895b3691.json", "format": {"type": "json"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "vconcat": [{"mark": {"type": "point", "size": 40}, "encoding": {"color": {"condition": {"type": "nominal", "field": "borough", "selection": "selector016"}, "value": "lightgray"}, "tooltip": [{"type": "quantitative", "field": "ReactionTime"}, {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"}, {"type": "quantitative", "field": "counter"}], "x": {"type": "ordinal", "axis": {"labelAngle": 0}, "field": "Complaint Category", "scale": {"zero": false}}, "y": {"type": "ordinal", "field": "ReactionTime", "scale": {"zero": false}, "sort": "descending"}}, "height": 300, "selection": {"selector016": {"type": "interval"}}, "width": 700}, {"mark": "bar", "encoding": {"color": {"type": "nominal", "field": "borough"}, "x": {"type": "ordinal", "aggregate": "count", "field": "counter"}, "y": {"type": "nominal", "field": "borough"}}, "transform": [{"filter": {"selection": "selector016"}}], "width": 700}], "data": {"url": "DATAReaction Time and Occurrence Frequency.json", "format": {"type": "json"}}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -14192,6 +14255,22 @@ Allocate borough</br></p>
 </div>
     </div>
   </div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 </body>
 
  

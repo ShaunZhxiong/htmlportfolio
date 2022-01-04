@@ -1,0 +1,43 @@
+{
+    "config": {"view": {"continuousWidth": 400, "continuousHeight": 300}},
+    "data": {
+      "url": "DATAMonthlyDistributionofReactionTime.json",
+      "format": {"type": "json"}
+    },
+    "mark": {
+      "type": "circle",
+      "opacity": 0.6,
+      "stroke": "black",
+      "strokeWidth": 1
+    },
+    "encoding": {
+      "color": {"value": "#FF8542"},
+      "size": {
+        "type": "quantitative",
+        "field": "counter",
+        "legend": {"title": "Total Occurrence"},
+        "scale": {"range": [0, 500]}
+      },
+      "tooltip": [
+        {"type": "nominal", "field": "Month_DEntered"},
+        {"type": "quantitative", "field": "ReactionTime"},
+        {"type": "quantitative", "field": "counter"}
+      ],
+      "x": {
+        "type": "ordinal",
+        "axis": {"labelAngle": 0},
+        "field": "Month_DEntered",
+        "title": "Month"
+      },
+      "y": {
+        "type": "nominal",
+        "axis": {"values": [1, 11, 21, 31, 41, 51, 61]},
+        "field": "ReactionTime",
+        "title": "Reaction Time / day"
+      }
+    },
+    "height": 400,
+    "title": "Monthly Distribution of Reaction Time",
+    "width": 600,
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"
+  }

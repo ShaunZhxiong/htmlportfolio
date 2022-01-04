@@ -1,0 +1,97 @@
+{
+  "config": {
+    "view": {"continuousWidth": 400, "continuousHeight": 300},
+    "axis": {"labelFontSize": 10, "titleFontSize": 10}
+  },
+  "vconcat": [
+    {
+      "mark": {"type": "point", "size": 80},
+      "encoding": {
+        "color": {
+          "condition": {
+            "type": "nominal",
+            "field": "borough",
+            "selection": "selector014"
+          },
+          "value": "lightgray"
+        },
+        "tooltip": [
+          {"type": "quantitative", "field": "ReactionTime"},
+          {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"},
+          {"type": "ordinal", "field": "Complaint Category"},
+          {"type": "quantitative", "field": "counter"}
+        ],
+        "x": {
+          "type": "ordinal",
+          "axis": {"labels": false, "ticks": false},
+          "field": "Complaint Category"
+        },
+        "y": {
+          "type": "ordinal",
+          "axis": {},
+          "field": "counter",
+          "sort": "descending",
+          "title": "Total Occurrence"
+        }
+      },
+      "height": 300,
+      "selection": {"selector014": {"type": "interval"}},
+      "width": 1800
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "color": {
+          "condition": {
+            "type": "ordinal",
+            "field": "",
+            "selection": "selector014"
+          },
+          "value": "lightgray"
+        },
+        "text": {"type": "ordinal", "field": "Complaint Category"},
+        "x": {"type": "ordinal", "axis": null, "field": "Complaint Category"}
+      },
+      "height": 0,
+      "width": 1800
+    },
+    {
+      "mark": {"type": "point", "size": 80},
+      "encoding": {
+        "color": {
+          "condition": {
+            "type": "nominal",
+            "field": "borough",
+            "selection": "selector014"
+          },
+          "value": "lightgray"
+        },
+        "tooltip": [
+          {"type": "quantitative", "field": "ReactionTime"},
+          {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"},
+          {"type": "quantitative", "field": "counter"}
+        ],
+        "x": {
+          "type": "ordinal",
+          "axis": {"labels": false, "ticks": false},
+          "field": "Complaint Category"
+        },
+        "y": {
+          "type": "ordinal",
+          "axis": {},
+          "field": "ReactionTime",
+          "sort": "ascending",
+          "title": "Average Reaction Time"
+        }
+      },
+      "height": 300,
+      "selection": {"selector014": {"type": "interval"}},
+      "width": 1800
+    }
+  ],
+  "data": {
+    "url": "DATAReaction Time and Occurrence Frequency.json",
+    "format": {"type": "json"}
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"
+}

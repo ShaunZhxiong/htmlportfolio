@@ -1,0 +1,53 @@
+{
+  "config": {
+    "view": {"continuousWidth": 400, "continuousHeight": 300},
+    "axis": {"labelFontSize": 8, "titleFontSize": 10}
+  },
+  "data": {
+    "url": "DATATimeDistributionofDifferentComplaintTypeinNYCsince2020.json",
+    "format": {"type": "json"}
+  },
+  "mark": {
+    "type": "circle",
+    "opacity": 0.4,
+    "stroke": "darkorange",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "color": {"value": "#F79D46"},
+    "size": {
+      "type": "quantitative",
+      "field": "counter",
+      "legend": {"title": "Total Occurrence"},
+      "scale": {"range": [0, 1000]}
+    },
+    "tooltip": [
+      {"type": "temporal", "field": "Date Entered"},
+      {"type": "nominal", "field": "Complaint Category"},
+      {"type": "nominal", "field": "COMPLAINT CATEGORY DESCRIPTION"},
+      {"type": "quantitative", "field": "counter"}
+    ],
+    "x": {
+      "type": "temporal",
+      "axis": {"labelAngle": 0},
+      "field": "Date Entered",
+      "title": "Date Entered"
+    },
+    "y": {
+      "type": "ordinal",
+      "field": "Complaint Category",
+      "title": "Complaint Category"
+    }
+  },
+  "height": 1200,
+  "selection": {
+    "selector013": {
+      "type": "interval",
+      "bind": "scales",
+      "encodings": ["x", "y"]
+    }
+  },
+  "title": "Time Distribution of Different Complaint Type in NYC since 2020",
+  "width": 1500,
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"
+}

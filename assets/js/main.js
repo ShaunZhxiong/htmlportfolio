@@ -261,5 +261,5 @@
 
 })(jQuery);
 
-vegaEmbed('#chart02', "assets/js/chart2.json").then(function (result) {
+vegaEmbed('#MonthlyDistributionofReactionTime', "Projects/MonthlyDistributionofReactionTime.json").then(function (result) {
 }).catch(console.error);
